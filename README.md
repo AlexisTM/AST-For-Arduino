@@ -12,13 +12,13 @@ If you have other propositions, don't hesitate
 
 ```json
 
-Program : 
 {
- program : {
-   classes : [{}],
-   function : [{}],
-   variables : [{}]
- }
+	"program": {
+		"classes": [{}],
+		"functions": [{}],
+		"variables": [{}],
+		"parent": {}
+	}
 }
 
 Class : 
@@ -26,7 +26,7 @@ Class :
 	"name": "className",
 	"properties": [{}],
 	"functions": [{}],
-  "parent": {}
+        "parent": {}
 }
 
 Function : 
@@ -40,7 +40,7 @@ Variable : for properties, variables, parameters, return
 {
 	"name": "oneProperty",
 	"type": "uint8_t",
-  "visibility": "public" | "protected" | "private",
+        "visibility": "public | protected | private",
 	"default": 8
 }
 ```
