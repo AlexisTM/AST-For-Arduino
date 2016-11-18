@@ -1,0 +1,20 @@
+digraph ATN {
+rankdir=LR;
+s25[fontsize=11, label="25", shape=doublecircle, fixedsize=true, width=.6];
+s24[fontsize=11,label="24", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s504[fontsize=11,label="504", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s505[fontsize=11,label="505", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s506[fontsize=11,label="506", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s507[fontsize=11,label="507", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s508[fontsize=11,label="{&rarr;\n508\nd=16|{<p0>|<p1>|<p2>}}", shape=record, fixedsize=false, peripheries=1];
+s509[fontsize=11,label="&larr;\n509", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s24 -> s508 [fontname="Times-Italic", label="&epsilon;"];
+s508:p0 -> s504 [fontname="Times-Italic", label="&epsilon;"];
+s508:p1 -> s505 [fontname="Times-Italic", label="&epsilon;"];
+s508:p2 -> s507 [fontname="Times-Italic", label="&epsilon;"];
+s504 -> s509 [fontsize=11, fontname="Courier", arrowsize=.7, label = "Identifier", arrowhead = normal];
+s505 -> s506 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'&'", arrowhead = normal];
+s507 -> s509 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'this'", arrowhead = normal];
+s509 -> s25 [fontname="Times-Italic", label="&epsilon;"];
+s506 -> s509 [fontsize=11, fontname="Courier", arrowsize=.7, label = "Identifier", arrowhead = normal];
+}

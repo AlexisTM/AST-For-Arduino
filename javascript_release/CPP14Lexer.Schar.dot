@@ -1,0 +1,18 @@
+digraph ATN {
+rankdir=LR;
+s316[fontsize=11, label="316", shape=doublecircle, fixedsize=true, width=.6];
+s1344[fontsize=11,label="1344", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1345[fontsize=11,label="1345", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1346[fontsize=11,label="1346", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1347[fontsize=11,label="{&rarr;\n1347\nd=57|{<p0>|<p1>|<p2>}}", shape=record, fixedsize=false, peripheries=1];
+s1348[fontsize=11,label="&larr;\n1348", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s315[fontsize=11,label="315", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s315 -> s1347 [fontname="Times-Italic", label="&epsilon;"];
+s1347:p0 -> s1344 [fontname="Times-Italic", label="&epsilon;"];
+s1347:p1 -> s1345 [fontname="Times-Italic", label="&epsilon;"];
+s1347:p2 -> s1346 [fontname="Times-Italic", label="&epsilon;"];
+s1344 -> s1348 [fontsize=11, fontname="Courier", arrowsize=.7, label = "~{'\\n', '', '\"', '\\'}", arrowhead = normal];
+s1345 -> s1348 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<Escapesequence>", arrowhead = normal];
+s1346 -> s1348 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<Universalcharactername>", arrowhead = normal];
+s1348 -> s316 [fontname="Times-Italic", label="&epsilon;"];
+}

@@ -1,0 +1,30 @@
+digraph ATN {
+rankdir=LR;
+s391[fontsize=11, label="391", shape=doublecircle, fixedsize=true, width=.6];
+s2452[fontsize=11,label="2452", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2453[fontsize=11,label="2453", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s390[fontsize=11,label="390", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2454[fontsize=11,label="2454", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2455[fontsize=11,label="2455", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2456[fontsize=11,label="2456", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2457[fontsize=11,label="2457", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2458[fontsize=11,label="2458", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2459[fontsize=11,label="{&rarr;\n2459\nd=314|{<p0>|<p1>|<p2>|<p3>|<p4>|<p5>|<p6>}}", shape=record, fixedsize=false, peripheries=1];
+s2460[fontsize=11,label="&larr;\n2460", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s390 -> s2459 [fontname="Times-Italic", label="&epsilon;"];
+s2459:p0 -> s2452 [fontname="Times-Italic", label="&epsilon;"];
+s2459:p1 -> s2453 [fontname="Times-Italic", label="&epsilon;"];
+s2459:p2 -> s2454 [fontname="Times-Italic", label="&epsilon;"];
+s2459:p3 -> s2455 [fontname="Times-Italic", label="&epsilon;"];
+s2459:p4 -> s2456 [fontname="Times-Italic", label="&epsilon;"];
+s2459:p5 -> s2457 [fontname="Times-Italic", label="&epsilon;"];
+s2459:p6 -> s2458 [fontname="Times-Italic", label="&epsilon;"];
+s2452 -> s2460 [fontsize=11, fontname="Courier", arrowsize=.7, label = "Integerliteral", arrowhead = normal];
+s2453 -> s2460 [fontsize=11, fontname="Courier", arrowsize=.7, label = "Characterliteral", arrowhead = normal];
+s2454 -> s2460 [fontsize=11, fontname="Courier", arrowsize=.7, label = "Floatingliteral", arrowhead = normal];
+s2455 -> s2460 [fontsize=11, fontname="Courier", arrowsize=.7, label = "Stringliteral", arrowhead = normal];
+s2456 -> s2460 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<booleanliteral>", arrowhead = normal];
+s2457 -> s2460 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<pointerliteral>", arrowhead = normal];
+s2458 -> s2460 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<userdefinedliteral>", arrowhead = normal];
+s2460 -> s391 [fontname="Times-Italic", label="&epsilon;"];
+}

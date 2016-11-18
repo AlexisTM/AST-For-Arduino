@@ -1,0 +1,30 @@
+digraph ATN {
+rankdir=LR;
+s3[fontsize=11, label="3", shape=doublecircle, fixedsize=true, width=.6];
+s2[fontsize=11,label="2", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s403[fontsize=11,label="403", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s404[fontsize=11,label="404", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s405[fontsize=11,label="405", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s406[fontsize=11,label="406", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s407[fontsize=11,label="407", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s408[fontsize=11,label="408", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s409[fontsize=11,label="409", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s410[fontsize=11,label="410", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s411[fontsize=11,label="{&rarr;\n411\nd=1|{<p0>|<p1>|<p2>|<p3>|<p4>}}", shape=record, fixedsize=false, peripheries=1];
+s412[fontsize=11,label="&larr;\n412", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2 -> s411 [fontname="Times-Italic", label="&epsilon;"];
+s411:p0 -> s403 [fontname="Times-Italic", label="&epsilon;"];
+s411:p1 -> s404 [fontname="Times-Italic", label="&epsilon;"];
+s411:p2 -> s405 [fontname="Times-Italic", label="&epsilon;"];
+s411:p3 -> s409 [fontname="Times-Italic", label="&epsilon;"];
+s411:p4 -> s410 [fontname="Times-Italic", label="&epsilon;"];
+s403 -> s412 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<literal>", arrowhead = normal];
+s404 -> s412 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'this'", arrowhead = normal];
+s405 -> s406 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'('", arrowhead = normal];
+s409 -> s412 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<idexpression>", arrowhead = normal];
+s410 -> s412 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<lambdaexpression>", arrowhead = normal];
+s412 -> s3 [fontname="Times-Italic", label="&epsilon;"];
+s406 -> s407 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<expression[0]>", arrowhead = normal];
+s407 -> s408 [fontsize=11, fontname="Courier", arrowsize=.7, label = "')'", arrowhead = normal];
+s408 -> s412 [fontname="Times-Italic", label="&epsilon;"];
+}

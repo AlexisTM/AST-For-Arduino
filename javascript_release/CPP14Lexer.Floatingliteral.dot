@@ -1,0 +1,38 @@
+digraph ATN {
+rankdir=LR;
+s300[fontsize=11, label="300", shape=doublecircle, fixedsize=true, width=.6];
+s1280[fontsize=11,label="1280", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1281[fontsize=11,label="{&rarr;\n1281\nd=43|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1282[fontsize=11,label="&larr;\n1282", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1283[fontsize=11,label="{&rarr;\n1283\nd=44|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1284[fontsize=11,label="&larr;\n1284", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s299[fontsize=11,label="299", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1271[fontsize=11,label="1271", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1272[fontsize=11,label="1272", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1273[fontsize=11,label="{&rarr;\n1273\nd=41|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1274[fontsize=11,label="&larr;\n1274", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1275[fontsize=11,label="1275", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1276[fontsize=11,label="{&rarr;\n1276\nd=42|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1277[fontsize=11,label="&larr;\n1277", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1278[fontsize=11,label="1278", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1279[fontsize=11,label="1279", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s299 -> s1283 [fontname="Times-Italic", label="&epsilon;"];
+s1283:p0 -> s1271 [fontname="Times-Italic", label="&epsilon;"];
+s1283:p1 -> s1278 [fontname="Times-Italic", label="&epsilon;"];
+s1271 -> s1273 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<Fractionalconstant>", arrowhead = normal];
+s1278 -> s1279 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<Digitsequence>", arrowhead = normal];
+s1273:p0 -> s1272 [fontname="Times-Italic", label="&epsilon;"];
+s1273:p1 -> s1274 [fontname="Times-Italic", label="&epsilon;"];
+s1279 -> s1281 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<Exponentpart>", arrowhead = normal];
+s1272 -> s1274 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<Exponentpart>", arrowhead = normal];
+s1274 -> s1276 [fontname="Times-Italic", label="&epsilon;"];
+s1281:p0 -> s1280 [fontname="Times-Italic", label="&epsilon;"];
+s1281:p1 -> s1282 [fontname="Times-Italic", label="&epsilon;"];
+s1276:p0 -> s1275 [fontname="Times-Italic", label="&epsilon;"];
+s1276:p1 -> s1277 [fontname="Times-Italic", label="&epsilon;"];
+s1280 -> s1282 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<Floatingsuffix>", arrowhead = normal];
+s1282 -> s1284 [fontname="Times-Italic", label="&epsilon;"];
+s1275 -> s1277 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<Floatingsuffix>", arrowhead = normal];
+s1277 -> s1284 [fontname="Times-Italic", label="&epsilon;"];
+s1284 -> s300 [fontname="Times-Italic", label="&epsilon;"];
+}

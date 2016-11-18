@@ -1,0 +1,32 @@
+digraph ATN {
+rankdir=LR;
+s322[fontsize=11, label="322", shape=doublecircle, fixedsize=true, width=.6];
+s321[fontsize=11,label="321", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1386[fontsize=11,label="1386", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1387[fontsize=11,label="1387", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1388[fontsize=11,label="{&rarr;\n1388\nd=62|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1389[fontsize=11,label="&larr;\n1389", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1390[fontsize=11,label="1390", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1391[fontsize=11,label="1391", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1392[fontsize=11,label="1392", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1393[fontsize=11,label="1393", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1394[fontsize=11,label="1394", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1395[fontsize=11,label="1395", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1396[fontsize=11,label="{&rarr;\n1396\nd=63|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1397[fontsize=11,label="&larr;\n1397", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s321 -> s1396 [fontname="Times-Italic", label="&epsilon;"];
+s1396:p0 -> s1386 [fontname="Times-Italic", label="&epsilon;"];
+s1396:p1 -> s1392 [fontname="Times-Italic", label="&epsilon;"];
+s1386 -> s1388 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<Fractionalconstant>", arrowhead = normal];
+s1392 -> s1393 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<Digitsequence>", arrowhead = normal];
+s1388:p0 -> s1387 [fontname="Times-Italic", label="&epsilon;"];
+s1388:p1 -> s1389 [fontname="Times-Italic", label="&epsilon;"];
+s1393 -> s1394 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<Exponentpart>", arrowhead = normal];
+s1387 -> s1389 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<Exponentpart>", arrowhead = normal];
+s1389 -> s1390 [fontname="Times-Italic", label="&epsilon;"];
+s1394 -> s1395 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<Udsuffix>", arrowhead = normal];
+s1390 -> s1391 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<Udsuffix>", arrowhead = normal];
+s1395 -> s1397 [fontname="Times-Italic", label="&epsilon;"];
+s1391 -> s1397 [fontname="Times-Italic", label="&epsilon;"];
+s1397 -> s322 [fontname="Times-Italic", label="&epsilon;"];
+}

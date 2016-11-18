@@ -1,0 +1,15 @@
+digraph ATN {
+rankdir=LR;
+s377[fontsize=11, label="377", shape=doublecircle, fixedsize=true, width=.6];
+s376[fontsize=11,label="376", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2360[fontsize=11,label="2360", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2361[fontsize=11,label="2361", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2362[fontsize=11,label="{&rarr;\n2362\nd=307|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s2363[fontsize=11,label="&larr;\n2363", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s376 -> s2362 [fontname="Times-Italic", label="&epsilon;"];
+s2362:p0 -> s2360 [fontname="Times-Italic", label="&epsilon;"];
+s2362:p1 -> s2361 [fontname="Times-Italic", label="&epsilon;"];
+s2360 -> s2363 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<dynamicexceptionspecification>", arrowhead = normal];
+s2361 -> s2363 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<noexceptspecification>", arrowhead = normal];
+s2363 -> s377 [fontname="Times-Italic", label="&epsilon;"];
+}

@@ -1,0 +1,19 @@
+digraph ATN {
+rankdir=LR;
+s9[fontsize=11, label="9", shape=doublecircle, fixedsize=true, width=.6];
+s432[fontsize=11,label="432", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s433[fontsize=11,label="433", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s8[fontsize=11,label="8", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s428[fontsize=11,label="428", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s429[fontsize=11,label="429", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s430[fontsize=11,label="{&rarr;\n430\nd=4|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s431[fontsize=11,label="&larr;\n431", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s8 -> s428 [fontname="Times-Italic", label="&epsilon;"];
+s428 -> s430 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<nestednamespecifier[0]>", arrowhead = normal];
+s430:p0 -> s429 [fontname="Times-Italic", label="&epsilon;"];
+s430:p1 -> s431 [fontname="Times-Italic", label="&epsilon;"];
+s429 -> s431 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'template'", arrowhead = normal];
+s431 -> s432 [fontname="Times-Italic", label="&epsilon;"];
+s432 -> s433 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<unqualifiedid>", arrowhead = normal];
+s433 -> s9 [fontname="Times-Italic", label="&epsilon;"];
+}

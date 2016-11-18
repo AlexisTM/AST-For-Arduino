@@ -1,0 +1,18 @@
+digraph ATN {
+rankdir=LR;
+s143[fontsize=11, label="143", shape=doublecircle, fixedsize=true, width=.6];
+s1264[fontsize=11,label="&larr;\n1264", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1260[fontsize=11,label="1260", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1261[fontsize=11,label="1261", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s142[fontsize=11,label="142", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1262[fontsize=11,label="1262", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1263[fontsize=11,label="{&rarr;\n1263\nd=111|{<p0>|<p1>|<p2>}}", shape=record, fixedsize=false, peripheries=1];
+s142 -> s1263 [fontname="Times-Italic", label="&epsilon;"];
+s1263:p0 -> s1260 [fontname="Times-Italic", label="&epsilon;"];
+s1263:p1 -> s1261 [fontname="Times-Italic", label="&epsilon;"];
+s1263:p2 -> s1262 [fontname="Times-Italic", label="&epsilon;"];
+s1260 -> s1264 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<trailingtypespecifier>", arrowhead = normal];
+s1261 -> s1264 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<classspecifier>", arrowhead = normal];
+s1262 -> s1264 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<enumspecifier>", arrowhead = normal];
+s1264 -> s143 [fontname="Times-Italic", label="&epsilon;"];
+}

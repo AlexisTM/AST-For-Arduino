@@ -1,0 +1,17 @@
+digraph ATN {
+rankdir=LR;
+s251[fontsize=11, label="251", shape=doublecircle, fixedsize=true, width=.6];
+s1747[fontsize=11,label="1747", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1748[fontsize=11,label="{&rarr;\n1748\nd=191|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1749[fontsize=11,label="&larr;\n1749", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1750[fontsize=11,label="1750", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1751[fontsize=11,label="1751", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s250[fontsize=11,label="250", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s250 -> s1748 [fontname="Times-Italic", label="&epsilon;"];
+s1748:p0 -> s1747 [fontname="Times-Italic", label="&epsilon;"];
+s1748:p1 -> s1749 [fontname="Times-Italic", label="&epsilon;"];
+s1747 -> s1749 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'...'", arrowhead = normal];
+s1749 -> s1750 [fontname="Times-Italic", label="&epsilon;"];
+s1750 -> s1751 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<idexpression>", arrowhead = normal];
+s1751 -> s251 [fontname="Times-Italic", label="&epsilon;"];
+}

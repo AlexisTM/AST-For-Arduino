@@ -1,0 +1,22 @@
+digraph ATN {
+rankdir=LR;
+s47[fontsize=11, label="47", shape=doublecircle, fixedsize=true, width=.6];
+s736[fontsize=11,label="&larr;\n736", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s737[fontsize=11,label="737", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s738[fontsize=11,label="{&rarr;\n738\nd=43|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s739[fontsize=11,label="&larr;\n739", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s733[fontsize=11,label="733", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s46[fontsize=11,label="46", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s734[fontsize=11,label="734", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s735[fontsize=11,label="{&rarr;\n735\nd=42|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s46 -> s738 [fontname="Times-Italic", label="&epsilon;"];
+s738:p0 -> s733 [fontname="Times-Italic", label="&epsilon;"];
+s738:p1 -> s737 [fontname="Times-Italic", label="&epsilon;"];
+s733 -> s735 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<ptroperator>", arrowhead = normal];
+s737 -> s739 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<noptrnewdeclarator[0]>", arrowhead = normal];
+s735:p0 -> s734 [fontname="Times-Italic", label="&epsilon;"];
+s735:p1 -> s736 [fontname="Times-Italic", label="&epsilon;"];
+s739 -> s47 [fontname="Times-Italic", label="&epsilon;"];
+s734 -> s736 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<newdeclarator>", arrowhead = normal];
+s736 -> s739 [fontname="Times-Italic", label="&epsilon;"];
+}

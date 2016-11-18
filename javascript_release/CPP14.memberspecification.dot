@@ -1,0 +1,31 @@
+digraph ATN {
+rankdir=LR;
+s297[fontsize=11, label="297", shape=doublecircle, fixedsize=true, width=.6];
+s296[fontsize=11,label="296", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1994[fontsize=11,label="1994", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1995[fontsize=11,label="1995", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1996[fontsize=11,label="{&rarr;\n1996\nd=242|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1997[fontsize=11,label="&larr;\n1997", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1998[fontsize=11,label="1998", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1999[fontsize=11,label="1999", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2000[fontsize=11,label="2000", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2001[fontsize=11,label="{&rarr;\n2001\nd=243|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s2002[fontsize=11,label="&larr;\n2002", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2003[fontsize=11,label="{&rarr;\n2003\nd=244|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s2004[fontsize=11,label="&larr;\n2004", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s296 -> s2003 [fontname="Times-Italic", label="&epsilon;"];
+s2003:p0 -> s1994 [fontname="Times-Italic", label="&epsilon;"];
+s2003:p1 -> s1998 [fontname="Times-Italic", label="&epsilon;"];
+s1994 -> s1996 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<memberdeclaration>", arrowhead = normal];
+s1998 -> s1999 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<accessspecifier>", arrowhead = normal];
+s1996:p0 -> s1995 [fontname="Times-Italic", label="&epsilon;"];
+s1996:p1 -> s1997 [fontname="Times-Italic", label="&epsilon;"];
+s1999 -> s2001 [fontsize=11, fontname="Courier", arrowsize=.7, label = "':'", arrowhead = normal];
+s1995 -> s1997 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<memberspecification>", arrowhead = normal];
+s1997 -> s2004 [fontname="Times-Italic", label="&epsilon;"];
+s2001:p0 -> s2000 [fontname="Times-Italic", label="&epsilon;"];
+s2001:p1 -> s2002 [fontname="Times-Italic", label="&epsilon;"];
+s2004 -> s297 [fontname="Times-Italic", label="&epsilon;"];
+s2000 -> s2002 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<memberspecification>", arrowhead = normal];
+s2002 -> s2004 [fontname="Times-Italic", label="&epsilon;"];
+}

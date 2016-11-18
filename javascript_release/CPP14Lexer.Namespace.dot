@@ -1,0 +1,26 @@
+digraph ATN {
+rankdir=LR;
+s82[fontsize=11, label="82", shape=doublecircle, fixedsize=true, width=.6];
+s624[fontsize=11,label="624", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s81[fontsize=11,label="81", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s625[fontsize=11,label="625", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s626[fontsize=11,label="626", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s627[fontsize=11,label="627", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s628[fontsize=11,label="628", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s629[fontsize=11,label="629", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s630[fontsize=11,label="630", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s631[fontsize=11,label="631", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s632[fontsize=11,label="632", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s623[fontsize=11,label="623", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s81 -> s623 [fontname="Times-Italic", label="&epsilon;"];
+s623 -> s624 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'n'", arrowhead = normal];
+s624 -> s625 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'a'", arrowhead = normal];
+s625 -> s626 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'m'", arrowhead = normal];
+s626 -> s627 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'e'", arrowhead = normal];
+s627 -> s628 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'s'", arrowhead = normal];
+s628 -> s629 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'p'", arrowhead = normal];
+s629 -> s630 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'a'", arrowhead = normal];
+s630 -> s631 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'c'", arrowhead = normal];
+s631 -> s632 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'e'", arrowhead = normal];
+s632 -> s82 [fontname="Times-Italic", label="&epsilon;"];
+}

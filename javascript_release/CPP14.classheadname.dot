@@ -1,0 +1,17 @@
+digraph ATN {
+rankdir=LR;
+s291[fontsize=11, label="291", shape=doublecircle, fixedsize=true, width=.6];
+s1985[fontsize=11,label="1985", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s290[fontsize=11,label="290", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1986[fontsize=11,label="{&rarr;\n1986\nd=241|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1987[fontsize=11,label="&larr;\n1987", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1988[fontsize=11,label="1988", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1989[fontsize=11,label="1989", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s290 -> s1986 [fontname="Times-Italic", label="&epsilon;"];
+s1986:p0 -> s1985 [fontname="Times-Italic", label="&epsilon;"];
+s1986:p1 -> s1987 [fontname="Times-Italic", label="&epsilon;"];
+s1985 -> s1987 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<nestednamespecifier[0]>", arrowhead = normal];
+s1987 -> s1988 [fontname="Times-Italic", label="&epsilon;"];
+s1988 -> s1989 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<classname>", arrowhead = normal];
+s1989 -> s291 [fontname="Times-Italic", label="&epsilon;"];
+}

@@ -1,0 +1,27 @@
+digraph ATN {
+rankdir=LR;
+s305[fontsize=11, label="305", shape=doublecircle, fixedsize=true, width=.6];
+s304[fontsize=11,label="304", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2064[fontsize=11,label="2064*", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2055[fontsize=11,label="2055", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2056[fontsize=11,label="2056", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2057[fontsize=11,label="2057", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2058[fontsize=11,label="2058", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2059[fontsize=11,label="2059", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2060[fontsize=11,label="&rarr;\n2060*", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2061[fontsize=11,label="&larr;\n2061", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2062[fontsize=11,label="{2062*\nd=256|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s2063[fontsize=11,label="2063", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s304 -> s2055 [fontname="Times-Italic", label="&epsilon;"];
+s2055 -> s2056 [fontsize=11, fontname="Courier", arrowsize=.7, label = "action_152:-1", arrowhead = normal];
+s2056 -> s2057 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<virtspecifier>", arrowhead = normal];
+s2057 -> s2062 [fontname="Times-Italic", label="&epsilon;"];
+s2062:p0 -> s2060 [fontname="Times-Italic", label="&epsilon;"];
+s2062:p1 -> s2063 [fontname="Times-Italic", label="&epsilon;"];
+s2060 -> s2058 [fontname="Times-Italic", label="&epsilon;"];
+s2063 -> s305 [fontname="Times-Italic", label="&epsilon;"];
+s2058 -> s2059 [fontsize=11, fontname="Courier", arrowsize=.7, label = "1 >= _p", arrowhead = normal];
+s2059 -> s2061 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<virtspecifier>", arrowhead = normal];
+s2061 -> s2064 [fontname="Times-Italic", label="&epsilon;"];
+s2064 -> s2062 [fontname="Times-Italic", label="&epsilon;", style="dashed"];
+}

@@ -1,0 +1,18 @@
+digraph ATN {
+rankdir=LR;
+s357[fontsize=11, label="357", shape=doublecircle, fixedsize=true, width=.6];
+s2290[fontsize=11,label="2290", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2291[fontsize=11,label="2291", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s356[fontsize=11,label="356", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2292[fontsize=11,label="2292", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2293[fontsize=11,label="{&rarr;\n2293\nd=296|{<p0>|<p1>|<p2>}}", shape=record, fixedsize=false, peripheries=1];
+s2294[fontsize=11,label="&larr;\n2294", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s356 -> s2293 [fontname="Times-Italic", label="&epsilon;"];
+s2293:p0 -> s2290 [fontname="Times-Italic", label="&epsilon;"];
+s2293:p1 -> s2291 [fontname="Times-Italic", label="&epsilon;"];
+s2293:p2 -> s2292 [fontname="Times-Italic", label="&epsilon;"];
+s2290 -> s2294 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<constantexpression>", arrowhead = normal];
+s2291 -> s2294 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<typeid>", arrowhead = normal];
+s2292 -> s2294 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<idexpression>", arrowhead = normal];
+s2294 -> s357 [fontname="Times-Italic", label="&epsilon;"];
+}

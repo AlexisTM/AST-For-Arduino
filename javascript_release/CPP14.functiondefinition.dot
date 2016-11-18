@@ -1,0 +1,33 @@
+digraph ATN {
+rankdir=LR;
+s271[fontsize=11, label="271", shape=doublecircle, fixedsize=true, width=.6];
+s1888[fontsize=11,label="&larr;\n1888", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1889[fontsize=11,label="1889", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1890[fontsize=11,label="{&rarr;\n1890\nd=221|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1891[fontsize=11,label="&larr;\n1891", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1892[fontsize=11,label="1892", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1893[fontsize=11,label="1893", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1894[fontsize=11,label="{&rarr;\n1894\nd=222|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1895[fontsize=11,label="&larr;\n1895", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1896[fontsize=11,label="1896", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1897[fontsize=11,label="1897", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s270[fontsize=11,label="270", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1886[fontsize=11,label="1886", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1887[fontsize=11,label="{&rarr;\n1887\nd=220|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s270 -> s1887 [fontname="Times-Italic", label="&epsilon;"];
+s1887:p0 -> s1886 [fontname="Times-Italic", label="&epsilon;"];
+s1887:p1 -> s1888 [fontname="Times-Italic", label="&epsilon;"];
+s1886 -> s1888 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<attributespecifierseq[0]>", arrowhead = normal];
+s1888 -> s1890 [fontname="Times-Italic", label="&epsilon;"];
+s1890:p0 -> s1889 [fontname="Times-Italic", label="&epsilon;"];
+s1890:p1 -> s1891 [fontname="Times-Italic", label="&epsilon;"];
+s1889 -> s1891 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<declspecifierseq>", arrowhead = normal];
+s1891 -> s1892 [fontname="Times-Italic", label="&epsilon;"];
+s1892 -> s1894 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<declarator>", arrowhead = normal];
+s1894:p0 -> s1893 [fontname="Times-Italic", label="&epsilon;"];
+s1894:p1 -> s1895 [fontname="Times-Italic", label="&epsilon;"];
+s1893 -> s1895 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<virtspecifierseq[0]>", arrowhead = normal];
+s1895 -> s1896 [fontname="Times-Italic", label="&epsilon;"];
+s1896 -> s1897 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<functionbody>", arrowhead = normal];
+s1897 -> s271 [fontname="Times-Italic", label="&epsilon;"];
+}

@@ -1,0 +1,15 @@
+digraph ATN {
+rankdir=LR;
+s217[fontsize=11, label="217", shape=doublecircle, fixedsize=true, width=.6];
+s1600[fontsize=11,label="1600", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1601[fontsize=11,label="1601", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1602[fontsize=11,label="{&rarr;\n1602\nd=164|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1603[fontsize=11,label="&larr;\n1603", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s216[fontsize=11,label="216", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s216 -> s1602 [fontname="Times-Italic", label="&epsilon;"];
+s1602:p0 -> s1600 [fontname="Times-Italic", label="&epsilon;"];
+s1602:p1 -> s1601 [fontname="Times-Italic", label="&epsilon;"];
+s1600 -> s1603 [fontsize=11, fontname="Courier", arrowsize=.7, label = "Identifier", arrowhead = normal];
+s1601 -> s1603 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<attributescopedtoken>", arrowhead = normal];
+s1603 -> s217 [fontname="Times-Italic", label="&epsilon;"];
+}

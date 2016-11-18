@@ -1,0 +1,17 @@
+digraph ATN {
+rankdir=LR;
+s277[fontsize=11, label="277", shape=doublecircle, fixedsize=true, width=.6];
+s1920[fontsize=11,label="1920", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1921[fontsize=11,label="{&rarr;\n1921\nd=226|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1922[fontsize=11,label="&larr;\n1922", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s276[fontsize=11,label="276", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1918[fontsize=11,label="1918", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1919[fontsize=11,label="1919", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s276 -> s1921 [fontname="Times-Italic", label="&epsilon;"];
+s1921:p0 -> s1918 [fontname="Times-Italic", label="&epsilon;"];
+s1921:p1 -> s1920 [fontname="Times-Italic", label="&epsilon;"];
+s1918 -> s1919 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'='", arrowhead = normal];
+s1920 -> s1922 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<bracedinitlist>", arrowhead = normal];
+s1919 -> s1922 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<initializerclause>", arrowhead = normal];
+s1922 -> s277 [fontname="Times-Italic", label="&epsilon;"];
+}

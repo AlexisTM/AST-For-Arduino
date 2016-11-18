@@ -1,0 +1,38 @@
+digraph ATN {
+rankdir=LR;
+s65[fontsize=11, label="65", shape=doublecircle, fixedsize=true, width=.6];
+s64[fontsize=11,label="64", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s839[fontsize=11,label="839", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s840[fontsize=11,label="840", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s841[fontsize=11,label="841", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s842[fontsize=11,label="842", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s843[fontsize=11,label="843", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s844[fontsize=11,label="844", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s845[fontsize=11,label="845", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s846[fontsize=11,label="846", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s847[fontsize=11,label="847", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s848[fontsize=11,label="848", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s849[fontsize=11,label="{&rarr;\n849*\nd=59|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s850[fontsize=11,label="&larr;\n850", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s851[fontsize=11,label="{851*\nd=60|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s852[fontsize=11,label="852", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s853[fontsize=11,label="853*", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s64 -> s839 [fontname="Times-Italic", label="&epsilon;"];
+s839 -> s840 [fontsize=11, fontname="Courier", arrowsize=.7, label = "action_32:-1", arrowhead = normal];
+s840 -> s841 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<additiveexpression[0]>", arrowhead = normal];
+s841 -> s851 [fontname="Times-Italic", label="&epsilon;"];
+s851:p0 -> s849 [fontname="Times-Italic", label="&epsilon;"];
+s851:p1 -> s852 [fontname="Times-Italic", label="&epsilon;"];
+s849:p0 -> s842 [fontname="Times-Italic", label="&epsilon;"];
+s849:p1 -> s845 [fontname="Times-Italic", label="&epsilon;"];
+s852 -> s65 [fontname="Times-Italic", label="&epsilon;"];
+s842 -> s843 [fontsize=11, fontname="Courier", arrowsize=.7, label = "2 >= _p", arrowhead = normal];
+s845 -> s846 [fontsize=11, fontname="Courier", arrowsize=.7, label = "1 >= _p", arrowhead = normal];
+s843 -> s844 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'<<'", arrowhead = normal];
+s846 -> s847 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<rightShift>", arrowhead = normal];
+s844 -> s850 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<additiveexpression[0]>", arrowhead = normal];
+s847 -> s848 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<additiveexpression[0]>", arrowhead = normal];
+s850 -> s853 [fontname="Times-Italic", label="&epsilon;"];
+s848 -> s850 [fontname="Times-Italic", label="&epsilon;"];
+s853 -> s851 [fontname="Times-Italic", label="&epsilon;", style="dashed"];
+}

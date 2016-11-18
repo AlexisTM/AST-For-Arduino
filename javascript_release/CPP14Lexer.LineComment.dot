@@ -1,0 +1,29 @@
+digraph ATN {
+rankdir=LR;
+s336[fontsize=11, label="336", shape=doublecircle, fixedsize=true, width=.6];
+s1440[fontsize=11,label="&rarr;\n1440*", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1441[fontsize=11,label="&larr;\n1441", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1442[fontsize=11,label="{1442*\nd=68|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1443[fontsize=11,label="1443", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1444[fontsize=11,label="1444*", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1445[fontsize=11,label="1445", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1446[fontsize=11,label="1446", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s335[fontsize=11,label="335", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1436[fontsize=11,label="1436", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1437[fontsize=11,label="1437", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1438[fontsize=11,label="1438", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1439[fontsize=11,label="1439", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s335 -> s1436 [fontname="Times-Italic", label="&epsilon;"];
+s1436 -> s1437 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'/'", arrowhead = normal];
+s1437 -> s1438 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'/'", arrowhead = normal];
+s1438 -> s1442 [fontname="Times-Italic", label="&epsilon;"];
+s1442:p0 -> s1440 [fontname="Times-Italic", label="&epsilon;"];
+s1442:p1 -> s1443 [fontname="Times-Italic", label="&epsilon;"];
+s1440 -> s1439 [fontname="Times-Italic", label="&epsilon;"];
+s1443 -> s1445 [fontname="Times-Italic", label="&epsilon;"];
+s1439 -> s1441 [fontsize=11, fontname="Courier", arrowsize=.7, label = "~{'\\n', ''}", arrowhead = normal];
+s1445 -> s1446 [fontsize=11, fontname="Courier", arrowsize=.7, label = "action_167:0", arrowhead = normal];
+s1441 -> s1444 [fontname="Times-Italic", label="&epsilon;"];
+s1446 -> s336 [fontname="Times-Italic", label="&epsilon;"];
+s1444 -> s1442 [fontname="Times-Italic", label="&epsilon;", style="dashed"];
+}

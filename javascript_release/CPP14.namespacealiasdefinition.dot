@@ -1,0 +1,18 @@
+digraph ATN {
+rankdir=LR;
+s195[fontsize=11, label="195", shape=doublecircle, fixedsize=true, width=.6];
+s194[fontsize=11,label="194", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1480[fontsize=11,label="1480", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1481[fontsize=11,label="1481", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1482[fontsize=11,label="1482", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1483[fontsize=11,label="1483", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1484[fontsize=11,label="1484", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1485[fontsize=11,label="1485", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s194 -> s1480 [fontname="Times-Italic", label="&epsilon;"];
+s1480 -> s1481 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'namespace'", arrowhead = normal];
+s1481 -> s1482 [fontsize=11, fontname="Courier", arrowsize=.7, label = "Identifier", arrowhead = normal];
+s1482 -> s1483 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'='", arrowhead = normal];
+s1483 -> s1484 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<qualifiednamespacespecifier>", arrowhead = normal];
+s1484 -> s1485 [fontsize=11, fontname="Courier", arrowsize=.7, label = "';'", arrowhead = normal];
+s1485 -> s195 [fontname="Times-Italic", label="&epsilon;"];
+}

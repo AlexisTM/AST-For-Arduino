@@ -1,0 +1,30 @@
+digraph ATN {
+rankdir=LR;
+s201[fontsize=11, label="201", shape=doublecircle, fixedsize=true, width=.6];
+s1506[fontsize=11,label="1506", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1507[fontsize=11,label="{&rarr;\n1507\nd=149|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1508[fontsize=11,label="&larr;\n1508", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1509[fontsize=11,label="1509", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1510[fontsize=11,label="1510", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1511[fontsize=11,label="1511", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s200[fontsize=11,label="200", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1512[fontsize=11,label="{&rarr;\n1512\nd=150|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1513[fontsize=11,label="&larr;\n1513", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1514[fontsize=11,label="1514", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1515[fontsize=11,label="1515", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1516[fontsize=11,label="1516", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s200 -> s1507 [fontname="Times-Italic", label="&epsilon;"];
+s1507:p0 -> s1506 [fontname="Times-Italic", label="&epsilon;"];
+s1507:p1 -> s1508 [fontname="Times-Italic", label="&epsilon;"];
+s1506 -> s1508 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<attributespecifierseq[0]>", arrowhead = normal];
+s1508 -> s1509 [fontname="Times-Italic", label="&epsilon;"];
+s1509 -> s1510 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'using'", arrowhead = normal];
+s1510 -> s1512 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'namespace'", arrowhead = normal];
+s1512:p0 -> s1511 [fontname="Times-Italic", label="&epsilon;"];
+s1512:p1 -> s1513 [fontname="Times-Italic", label="&epsilon;"];
+s1511 -> s1513 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<nestednamespecifier[0]>", arrowhead = normal];
+s1513 -> s1514 [fontname="Times-Italic", label="&epsilon;"];
+s1514 -> s1515 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<namespacename>", arrowhead = normal];
+s1515 -> s1516 [fontsize=11, fontname="Courier", arrowsize=.7, label = "';'", arrowhead = normal];
+s1516 -> s201 [fontname="Times-Italic", label="&epsilon;"];
+}

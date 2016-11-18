@@ -1,0 +1,19 @@
+digraph ATN {
+rankdir=LR;
+s15[fontsize=11, label="15", shape=doublecircle, fixedsize=true, width=.6];
+s468[fontsize=11,label="468", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s469[fontsize=11,label="469", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s470[fontsize=11,label="{&rarr;\n470\nd=10|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s471[fontsize=11,label="&larr;\n471", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s472[fontsize=11,label="472", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s473[fontsize=11,label="473", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s14[fontsize=11,label="14", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s14 -> s468 [fontname="Times-Italic", label="&epsilon;"];
+s468 -> s470 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'['", arrowhead = normal];
+s470:p0 -> s469 [fontname="Times-Italic", label="&epsilon;"];
+s470:p1 -> s471 [fontname="Times-Italic", label="&epsilon;"];
+s469 -> s471 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<lambdacapture>", arrowhead = normal];
+s471 -> s472 [fontname="Times-Italic", label="&epsilon;"];
+s472 -> s473 [fontsize=11, fontname="Courier", arrowsize=.7, label = "']'", arrowhead = normal];
+s473 -> s15 [fontname="Times-Italic", label="&epsilon;"];
+}

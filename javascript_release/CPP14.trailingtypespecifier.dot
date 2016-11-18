@@ -1,0 +1,21 @@
+digraph ATN {
+rankdir=LR;
+s145[fontsize=11, label="145", shape=doublecircle, fixedsize=true, width=.6];
+s144[fontsize=11,label="144", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1265[fontsize=11,label="1265", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1266[fontsize=11,label="1266", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1267[fontsize=11,label="1267", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1268[fontsize=11,label="1268", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1269[fontsize=11,label="{&rarr;\n1269\nd=112|{<p0>|<p1>|<p2>|<p3>}}", shape=record, fixedsize=false, peripheries=1];
+s1270[fontsize=11,label="&larr;\n1270", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s144 -> s1269 [fontname="Times-Italic", label="&epsilon;"];
+s1269:p0 -> s1265 [fontname="Times-Italic", label="&epsilon;"];
+s1269:p1 -> s1266 [fontname="Times-Italic", label="&epsilon;"];
+s1269:p2 -> s1267 [fontname="Times-Italic", label="&epsilon;"];
+s1269:p3 -> s1268 [fontname="Times-Italic", label="&epsilon;"];
+s1265 -> s1270 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<simpletypespecifier>", arrowhead = normal];
+s1266 -> s1270 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<elaboratedtypespecifier>", arrowhead = normal];
+s1267 -> s1270 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<typenamespecifier>", arrowhead = normal];
+s1268 -> s1270 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<cvqualifier>", arrowhead = normal];
+s1270 -> s145 [fontname="Times-Italic", label="&epsilon;"];
+}

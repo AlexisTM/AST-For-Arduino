@@ -1,0 +1,35 @@
+digraph ATN {
+rankdir=LR;
+s334[fontsize=11, label="334", shape=doublecircle, fixedsize=true, width=.6];
+s333[fontsize=11,label="333", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1422[fontsize=11,label="1422", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1423[fontsize=11,label="1423", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1424[fontsize=11,label="1424", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1425[fontsize=11,label="1425", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1426[fontsize=11,label="&rarr;\n1426*", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1427[fontsize=11,label="&larr;\n1427", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1428[fontsize=11,label="{1428*\nd=67|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1429[fontsize=11,label="1429", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1430[fontsize=11,label="1430*", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1431[fontsize=11,label="1431", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1432[fontsize=11,label="1432", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1433[fontsize=11,label="1433", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1434[fontsize=11,label="1434", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1435[fontsize=11,label="1435", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s333 -> s1422 [fontname="Times-Italic", label="&epsilon;"];
+s1422 -> s1423 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'/'", arrowhead = normal];
+s1423 -> s1424 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'*'", arrowhead = normal];
+s1424 -> s1428 [fontname="Times-Italic", label="&epsilon;"];
+s1428:p0 -> s1429 [fontname="Times-Italic", label="&epsilon;"];
+s1428:p1 -> s1426 [fontname="Times-Italic", label="&epsilon;"];
+s1429 -> s1431 [fontname="Times-Italic", label="&epsilon;"];
+s1426 -> s1425 [fontname="Times-Italic", label="&epsilon;"];
+s1431 -> s1432 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'*'", arrowhead = normal];
+s1425 -> s1427 [fontsize=11, fontname="Courier", arrowsize=.7, label = ".", arrowhead = normal];
+s1432 -> s1433 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'/'", arrowhead = normal];
+s1427 -> s1430 [fontname="Times-Italic", label="&epsilon;"];
+s1433 -> s1434 [fontname="Times-Italic", label="&epsilon;"];
+s1430 -> s1428 [fontname="Times-Italic", label="&epsilon;", style="dashed"];
+s1434 -> s1435 [fontsize=11, fontname="Courier", arrowsize=.7, label = "action_166:0", arrowhead = normal];
+s1435 -> s334 [fontname="Times-Italic", label="&epsilon;"];
+}

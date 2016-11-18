@@ -1,0 +1,26 @@
+digraph ATN {
+rankdir=LR;
+s135[fontsize=11, label="135", shape=doublecircle, fixedsize=true, width=.6];
+s1248[fontsize=11,label="&larr;\n1248", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1249[fontsize=11,label="1249", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1250[fontsize=11,label="1250", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1251[fontsize=11,label="1251", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1252[fontsize=11,label="{&rarr;\n1252\nd=110|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1253[fontsize=11,label="&larr;\n1253", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s134[fontsize=11,label="134", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1245[fontsize=11,label="1245", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1246[fontsize=11,label="1246", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1247[fontsize=11,label="{&rarr;\n1247\nd=109|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s134 -> s1252 [fontname="Times-Italic", label="&epsilon;"];
+s1252:p0 -> s1245 [fontname="Times-Italic", label="&epsilon;"];
+s1252:p1 -> s1249 [fontname="Times-Italic", label="&epsilon;"];
+s1245 -> s1247 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<declspecifier>", arrowhead = normal];
+s1249 -> s1250 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<declspecifier>", arrowhead = normal];
+s1247:p0 -> s1246 [fontname="Times-Italic", label="&epsilon;"];
+s1247:p1 -> s1248 [fontname="Times-Italic", label="&epsilon;"];
+s1250 -> s1251 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<declspecifierseq>", arrowhead = normal];
+s1246 -> s1248 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<attributespecifierseq[0]>", arrowhead = normal];
+s1248 -> s1253 [fontname="Times-Italic", label="&epsilon;"];
+s1251 -> s1253 [fontname="Times-Italic", label="&epsilon;"];
+s1253 -> s135 [fontname="Times-Italic", label="&epsilon;"];
+}

@@ -1,0 +1,29 @@
+digraph ATN {
+rankdir=LR;
+s71[fontsize=11, label="71", shape=doublecircle, fixedsize=true, width=.6];
+s896[fontsize=11,label="{896*\nd=65|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s897[fontsize=11,label="897", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s898[fontsize=11,label="898*", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s70[fontsize=11,label="70", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s888[fontsize=11,label="888", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s889[fontsize=11,label="889", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s890[fontsize=11,label="890", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s891[fontsize=11,label="891", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s892[fontsize=11,label="892", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s893[fontsize=11,label="893", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s894[fontsize=11,label="&rarr;\n894*", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s895[fontsize=11,label="&larr;\n895", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s70 -> s888 [fontname="Times-Italic", label="&epsilon;"];
+s888 -> s889 [fontsize=11, fontname="Courier", arrowsize=.7, label = "action_35:-1", arrowhead = normal];
+s889 -> s890 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<equalityexpression[0]>", arrowhead = normal];
+s890 -> s896 [fontname="Times-Italic", label="&epsilon;"];
+s896:p0 -> s894 [fontname="Times-Italic", label="&epsilon;"];
+s896:p1 -> s897 [fontname="Times-Italic", label="&epsilon;"];
+s894 -> s891 [fontname="Times-Italic", label="&epsilon;"];
+s897 -> s71 [fontname="Times-Italic", label="&epsilon;"];
+s891 -> s892 [fontsize=11, fontname="Courier", arrowsize=.7, label = "1 >= _p", arrowhead = normal];
+s892 -> s893 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'&'", arrowhead = normal];
+s893 -> s895 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<equalityexpression[0]>", arrowhead = normal];
+s895 -> s898 [fontname="Times-Italic", label="&epsilon;"];
+s898 -> s896 [fontname="Times-Italic", label="&epsilon;", style="dashed"];
+}

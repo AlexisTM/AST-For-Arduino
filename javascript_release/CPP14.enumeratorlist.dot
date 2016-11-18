@@ -1,0 +1,29 @@
+digraph ATN {
+rankdir=LR;
+s171[fontsize=11, label="171", shape=doublecircle, fixedsize=true, width=.6];
+s1415[fontsize=11,label="1415", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1416[fontsize=11,label="1416", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1417[fontsize=11,label="1417", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s170[fontsize=11,label="170", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1418[fontsize=11,label="1418", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1419[fontsize=11,label="1419", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1420[fontsize=11,label="1420", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1421[fontsize=11,label="&rarr;\n1421*", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1422[fontsize=11,label="&larr;\n1422", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1423[fontsize=11,label="{1423*\nd=137|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1424[fontsize=11,label="1424", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1425[fontsize=11,label="1425*", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s170 -> s1415 [fontname="Times-Italic", label="&epsilon;"];
+s1415 -> s1416 [fontsize=11, fontname="Courier", arrowsize=.7, label = "action_85:-1", arrowhead = normal];
+s1416 -> s1417 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<enumeratordefinition>", arrowhead = normal];
+s1417 -> s1423 [fontname="Times-Italic", label="&epsilon;"];
+s1423:p0 -> s1421 [fontname="Times-Italic", label="&epsilon;"];
+s1423:p1 -> s1424 [fontname="Times-Italic", label="&epsilon;"];
+s1421 -> s1418 [fontname="Times-Italic", label="&epsilon;"];
+s1424 -> s171 [fontname="Times-Italic", label="&epsilon;"];
+s1418 -> s1419 [fontsize=11, fontname="Courier", arrowsize=.7, label = "1 >= _p", arrowhead = normal];
+s1419 -> s1420 [fontsize=11, fontname="Courier", arrowsize=.7, label = "','", arrowhead = normal];
+s1420 -> s1422 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<enumeratordefinition>", arrowhead = normal];
+s1422 -> s1425 [fontname="Times-Italic", label="&epsilon;"];
+s1425 -> s1423 [fontname="Times-Italic", label="&epsilon;", style="dashed"];
+}

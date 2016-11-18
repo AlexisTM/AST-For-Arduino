@@ -1,0 +1,21 @@
+digraph ATN {
+rankdir=LR;
+s233[fontsize=11, label="233", shape=doublecircle, fixedsize=true, width=.6];
+s1654[fontsize=11,label="1654", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1655[fontsize=11,label="1655", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s232[fontsize=11,label="232", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1656[fontsize=11,label="1656", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1657[fontsize=11,label="1657", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1658[fontsize=11,label="1658", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1659[fontsize=11,label="{&rarr;\n1659\nd=170|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1660[fontsize=11,label="&larr;\n1660", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s232 -> s1659 [fontname="Times-Italic", label="&epsilon;"];
+s1659:p0 -> s1654 [fontname="Times-Italic", label="&epsilon;"];
+s1659:p1 -> s1655 [fontname="Times-Italic", label="&epsilon;"];
+s1654 -> s1660 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<ptrdeclarator>", arrowhead = normal];
+s1655 -> s1656 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<noptrdeclarator[0]>", arrowhead = normal];
+s1660 -> s233 [fontname="Times-Italic", label="&epsilon;"];
+s1656 -> s1657 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<parametersandqualifiers>", arrowhead = normal];
+s1657 -> s1658 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<trailingreturntype>", arrowhead = normal];
+s1658 -> s1660 [fontname="Times-Italic", label="&epsilon;"];
+}

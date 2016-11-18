@@ -1,0 +1,21 @@
+digraph ATN {
+rankdir=LR;
+s349[fontsize=11, label="349", shape=doublecircle, fixedsize=true, width=.6];
+s2248[fontsize=11,label="2248", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2249[fontsize=11,label="2249", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2250[fontsize=11,label="2250", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2251[fontsize=11,label="{&rarr;\n2251\nd=289|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s348[fontsize=11,label="348", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2252[fontsize=11,label="&larr;\n2252", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2253[fontsize=11,label="2253", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2254[fontsize=11,label="2254", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s348 -> s2248 [fontname="Times-Italic", label="&epsilon;"];
+s2248 -> s2249 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<templatename>", arrowhead = normal];
+s2249 -> s2251 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'<'", arrowhead = normal];
+s2251:p0 -> s2250 [fontname="Times-Italic", label="&epsilon;"];
+s2251:p1 -> s2252 [fontname="Times-Italic", label="&epsilon;"];
+s2250 -> s2252 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<templateargumentlist[0]>", arrowhead = normal];
+s2252 -> s2253 [fontname="Times-Italic", label="&epsilon;"];
+s2253 -> s2254 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'>'", arrowhead = normal];
+s2254 -> s349 [fontname="Times-Italic", label="&epsilon;"];
+}

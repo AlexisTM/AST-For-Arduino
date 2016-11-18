@@ -1,0 +1,19 @@
+digraph ATN {
+rankdir=LR;
+s235[fontsize=11, label="235", shape=doublecircle, fixedsize=true, width=.6];
+s1664[fontsize=11,label="1664", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1665[fontsize=11,label="{&rarr;\n1665\nd=171|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1666[fontsize=11,label="&larr;\n1666", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s234[fontsize=11,label="234", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1661[fontsize=11,label="1661", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1662[fontsize=11,label="1662", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1663[fontsize=11,label="1663", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s234 -> s1665 [fontname="Times-Italic", label="&epsilon;"];
+s1665:p0 -> s1661 [fontname="Times-Italic", label="&epsilon;"];
+s1665:p1 -> s1662 [fontname="Times-Italic", label="&epsilon;"];
+s1661 -> s1666 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<noptrdeclarator[0]>", arrowhead = normal];
+s1662 -> s1663 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<ptroperator>", arrowhead = normal];
+s1666 -> s235 [fontname="Times-Italic", label="&epsilon;"];
+s1663 -> s1664 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<ptrdeclarator>", arrowhead = normal];
+s1664 -> s1666 [fontname="Times-Italic", label="&epsilon;"];
+}

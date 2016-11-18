@@ -1,0 +1,38 @@
+digraph ATN {
+rankdir=LR;
+s199[fontsize=11, label="199", shape=doublecircle, fixedsize=true, width=.6];
+s1504[fontsize=11,label="{&rarr;\n1504\nd=148|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1505[fontsize=11,label="&larr;\n1505", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s198[fontsize=11,label="198", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1491[fontsize=11,label="1491", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1492[fontsize=11,label="1492", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1493[fontsize=11,label="{&rarr;\n1493\nd=147|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1494[fontsize=11,label="&larr;\n1494", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1495[fontsize=11,label="1495", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1496[fontsize=11,label="1496", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1497[fontsize=11,label="1497", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1498[fontsize=11,label="1498", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1499[fontsize=11,label="1499", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1500[fontsize=11,label="1500", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1501[fontsize=11,label="1501", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1502[fontsize=11,label="1502", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1503[fontsize=11,label="1503", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s198 -> s1504 [fontname="Times-Italic", label="&epsilon;"];
+s1504:p0 -> s1491 [fontname="Times-Italic", label="&epsilon;"];
+s1504:p1 -> s1499 [fontname="Times-Italic", label="&epsilon;"];
+s1491 -> s1493 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'using'", arrowhead = normal];
+s1499 -> s1500 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'using'", arrowhead = normal];
+s1493:p0 -> s1492 [fontname="Times-Italic", label="&epsilon;"];
+s1493:p1 -> s1494 [fontname="Times-Italic", label="&epsilon;"];
+s1500 -> s1501 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'::'", arrowhead = normal];
+s1492 -> s1494 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'typename'", arrowhead = normal];
+s1494 -> s1495 [fontname="Times-Italic", label="&epsilon;"];
+s1501 -> s1502 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<unqualifiedid>", arrowhead = normal];
+s1495 -> s1496 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<nestednamespecifier[0]>", arrowhead = normal];
+s1502 -> s1503 [fontsize=11, fontname="Courier", arrowsize=.7, label = "';'", arrowhead = normal];
+s1496 -> s1497 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<unqualifiedid>", arrowhead = normal];
+s1503 -> s1505 [fontname="Times-Italic", label="&epsilon;"];
+s1497 -> s1498 [fontsize=11, fontname="Courier", arrowsize=.7, label = "';'", arrowhead = normal];
+s1505 -> s199 [fontname="Times-Italic", label="&epsilon;"];
+s1498 -> s1505 [fontname="Times-Italic", label="&epsilon;"];
+}

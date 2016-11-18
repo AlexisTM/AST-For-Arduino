@@ -1,0 +1,25 @@
+digraph ATN {
+rankdir=LR;
+s81[fontsize=11, label="81", shape=doublecircle, fixedsize=true, width=.6];
+s80[fontsize=11,label="80", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s944[fontsize=11,label="944", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s945[fontsize=11,label="945", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s946[fontsize=11,label="946", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s947[fontsize=11,label="947", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s948[fontsize=11,label="948", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s949[fontsize=11,label="949", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s950[fontsize=11,label="{&rarr;\n950\nd=70|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s951[fontsize=11,label="&larr;\n951", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s943[fontsize=11,label="943", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s80 -> s950 [fontname="Times-Italic", label="&epsilon;"];
+s950:p0 -> s943 [fontname="Times-Italic", label="&epsilon;"];
+s950:p1 -> s944 [fontname="Times-Italic", label="&epsilon;"];
+s943 -> s951 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<logicalorexpression[0]>", arrowhead = normal];
+s944 -> s945 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<logicalorexpression[0]>", arrowhead = normal];
+s951 -> s81 [fontname="Times-Italic", label="&epsilon;"];
+s945 -> s946 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'?'", arrowhead = normal];
+s946 -> s947 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<expression[0]>", arrowhead = normal];
+s947 -> s948 [fontsize=11, fontname="Courier", arrowsize=.7, label = "':'", arrowhead = normal];
+s948 -> s949 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<assignmentexpression>", arrowhead = normal];
+s949 -> s951 [fontname="Times-Italic", label="&epsilon;"];
+}

@@ -1,0 +1,19 @@
+digraph ATN {
+rankdir=LR;
+s97[fontsize=11, label="97", shape=doublecircle, fixedsize=true, width=.6];
+s96[fontsize=11,label="96", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1041[fontsize=11,label="1041", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1042[fontsize=11,label="1042", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1043[fontsize=11,label="{&rarr;\n1043\nd=86|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1044[fontsize=11,label="&larr;\n1044", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1045[fontsize=11,label="1045", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1046[fontsize=11,label="1046", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s96 -> s1041 [fontname="Times-Italic", label="&epsilon;"];
+s1041 -> s1043 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'{'", arrowhead = normal];
+s1043:p0 -> s1042 [fontname="Times-Italic", label="&epsilon;"];
+s1043:p1 -> s1044 [fontname="Times-Italic", label="&epsilon;"];
+s1042 -> s1044 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<statementseq[0]>", arrowhead = normal];
+s1044 -> s1045 [fontname="Times-Italic", label="&epsilon;"];
+s1045 -> s1046 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'}'", arrowhead = normal];
+s1046 -> s97 [fontname="Times-Italic", label="&epsilon;"];
+}

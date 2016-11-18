@@ -1,0 +1,26 @@
+digraph ATN {
+rankdir=LR;
+s149[fontsize=11, label="149", shape=doublecircle, fixedsize=true, width=.6];
+s1280[fontsize=11,label="1280", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1281[fontsize=11,label="1281", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1282[fontsize=11,label="{&rarr;\n1282\nd=115|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1283[fontsize=11,label="&larr;\n1283", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s148[fontsize=11,label="148", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1284[fontsize=11,label="1284", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1285[fontsize=11,label="1285", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1286[fontsize=11,label="1286", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1287[fontsize=11,label="{&rarr;\n1287\nd=116|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1288[fontsize=11,label="&larr;\n1288", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s148 -> s1287 [fontname="Times-Italic", label="&epsilon;"];
+s1287:p0 -> s1280 [fontname="Times-Italic", label="&epsilon;"];
+s1287:p1 -> s1284 [fontname="Times-Italic", label="&epsilon;"];
+s1280 -> s1282 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<trailingtypespecifier>", arrowhead = normal];
+s1284 -> s1285 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<trailingtypespecifier>", arrowhead = normal];
+s1282:p0 -> s1281 [fontname="Times-Italic", label="&epsilon;"];
+s1282:p1 -> s1283 [fontname="Times-Italic", label="&epsilon;"];
+s1285 -> s1286 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<trailingtypespecifierseq>", arrowhead = normal];
+s1281 -> s1283 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<attributespecifierseq[0]>", arrowhead = normal];
+s1283 -> s1288 [fontname="Times-Italic", label="&epsilon;"];
+s1286 -> s1288 [fontname="Times-Italic", label="&epsilon;"];
+s1288 -> s149 [fontname="Times-Italic", label="&epsilon;"];
+}

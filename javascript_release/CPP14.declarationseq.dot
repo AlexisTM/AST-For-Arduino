@@ -1,0 +1,27 @@
+digraph ATN {
+rankdir=LR;
+s117[fontsize=11, label="117", shape=doublecircle, fixedsize=true, width=.6];
+s1168[fontsize=11,label="1168", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1169[fontsize=11,label="1169", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1170[fontsize=11,label="1170", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1171[fontsize=11,label="1171", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s116[fontsize=11,label="116", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1172[fontsize=11,label="1172", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1173[fontsize=11,label="&rarr;\n1173*", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1174[fontsize=11,label="&larr;\n1174", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1175[fontsize=11,label="{1175*\nd=100|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1176[fontsize=11,label="1176", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1177[fontsize=11,label="1177*", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s116 -> s1168 [fontname="Times-Italic", label="&epsilon;"];
+s1168 -> s1169 [fontsize=11, fontname="Courier", arrowsize=.7, label = "action_58:-1", arrowhead = normal];
+s1169 -> s1170 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<declaration>", arrowhead = normal];
+s1170 -> s1175 [fontname="Times-Italic", label="&epsilon;"];
+s1175:p0 -> s1173 [fontname="Times-Italic", label="&epsilon;"];
+s1175:p1 -> s1176 [fontname="Times-Italic", label="&epsilon;"];
+s1173 -> s1171 [fontname="Times-Italic", label="&epsilon;"];
+s1176 -> s117 [fontname="Times-Italic", label="&epsilon;"];
+s1171 -> s1172 [fontsize=11, fontname="Courier", arrowsize=.7, label = "1 >= _p", arrowhead = normal];
+s1172 -> s1174 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<declaration>", arrowhead = normal];
+s1174 -> s1177 [fontname="Times-Italic", label="&epsilon;"];
+s1177 -> s1175 [fontname="Times-Italic", label="&epsilon;", style="dashed"];
+}

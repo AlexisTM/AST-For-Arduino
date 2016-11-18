@@ -1,0 +1,17 @@
+digraph ATN {
+rankdir=LR;
+s197[fontsize=11, label="197", shape=doublecircle, fixedsize=true, width=.6];
+s1488[fontsize=11,label="&larr;\n1488", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1489[fontsize=11,label="1489", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1490[fontsize=11,label="1490", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s196[fontsize=11,label="196", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1486[fontsize=11,label="1486", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1487[fontsize=11,label="{&rarr;\n1487\nd=146|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s196 -> s1487 [fontname="Times-Italic", label="&epsilon;"];
+s1487:p0 -> s1486 [fontname="Times-Italic", label="&epsilon;"];
+s1487:p1 -> s1488 [fontname="Times-Italic", label="&epsilon;"];
+s1486 -> s1488 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<nestednamespecifier[0]>", arrowhead = normal];
+s1488 -> s1489 [fontname="Times-Italic", label="&epsilon;"];
+s1489 -> s1490 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<namespacename>", arrowhead = normal];
+s1490 -> s197 [fontname="Times-Italic", label="&epsilon;"];
+}

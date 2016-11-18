@@ -1,0 +1,12 @@
+digraph ATN {
+rankdir=LR;
+s131[fontsize=11, label="131", shape=doublecircle, fixedsize=true, width=.6];
+s130[fontsize=11,label="130", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1234[fontsize=11,label="1234", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1235[fontsize=11,label="1235", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1236[fontsize=11,label="1236", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s130 -> s1234 [fontname="Times-Italic", label="&epsilon;"];
+s1234 -> s1235 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<attributespecifierseq[0]>", arrowhead = normal];
+s1235 -> s1236 [fontsize=11, fontname="Courier", arrowsize=.7, label = "';'", arrowhead = normal];
+s1236 -> s131 [fontname="Times-Italic", label="&epsilon;"];
+}

@@ -1,0 +1,22 @@
+digraph ATN {
+rankdir=LR;
+s127[fontsize=11, label="127", shape=doublecircle, fixedsize=true, width=.6];
+s1224[fontsize=11,label="1224", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1225[fontsize=11,label="1225", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1226[fontsize=11,label="1226", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1227[fontsize=11,label="1227", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1228[fontsize=11,label="1228", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1229[fontsize=11,label="1229", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s126[fontsize=11,label="126", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1230[fontsize=11,label="1230", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1231[fontsize=11,label="1231", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s126 -> s1224 [fontname="Times-Italic", label="&epsilon;"];
+s1224 -> s1225 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'static_assert'", arrowhead = normal];
+s1225 -> s1226 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'('", arrowhead = normal];
+s1226 -> s1227 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<constantexpression>", arrowhead = normal];
+s1227 -> s1228 [fontsize=11, fontname="Courier", arrowsize=.7, label = "','", arrowhead = normal];
+s1228 -> s1229 [fontsize=11, fontname="Courier", arrowsize=.7, label = "Stringliteral", arrowhead = normal];
+s1229 -> s1230 [fontsize=11, fontname="Courier", arrowsize=.7, label = "')'", arrowhead = normal];
+s1230 -> s1231 [fontsize=11, fontname="Courier", arrowsize=.7, label = "';'", arrowhead = normal];
+s1231 -> s127 [fontname="Times-Italic", label="&epsilon;"];
+}

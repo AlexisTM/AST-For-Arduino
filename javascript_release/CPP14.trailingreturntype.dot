@@ -1,0 +1,17 @@
+digraph ATN {
+rankdir=LR;
+s241[fontsize=11, label="241", shape=doublecircle, fixedsize=true, width=.6];
+s240[fontsize=11,label="240", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1712[fontsize=11,label="{&rarr;\n1712\nd=182|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1713[fontsize=11,label="&larr;\n1713", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1709[fontsize=11,label="1709", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1710[fontsize=11,label="1710", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1711[fontsize=11,label="1711", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s240 -> s1709 [fontname="Times-Italic", label="&epsilon;"];
+s1709 -> s1710 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'->'", arrowhead = normal];
+s1710 -> s1712 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<trailingtypespecifierseq>", arrowhead = normal];
+s1712:p0 -> s1711 [fontname="Times-Italic", label="&epsilon;"];
+s1712:p1 -> s1713 [fontname="Times-Italic", label="&epsilon;"];
+s1711 -> s1713 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<abstractdeclarator>", arrowhead = normal];
+s1713 -> s241 [fontname="Times-Italic", label="&epsilon;"];
+}

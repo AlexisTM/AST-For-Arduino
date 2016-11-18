@@ -1,0 +1,29 @@
+digraph ATN {
+rankdir=LR;
+s155[fontsize=11, label="155", shape=doublecircle, fixedsize=true, width=.6];
+s1320[fontsize=11,label="1320", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1321[fontsize=11,label="1321", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1322[fontsize=11,label="1322", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1323[fontsize=11,label="1323", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1324[fontsize=11,label="1324", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1325[fontsize=11,label="1325", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1326[fontsize=11,label="1326", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1327[fontsize=11,label="1327", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1328[fontsize=11,label="1328", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1329[fontsize=11,label="{&rarr;\n1329\nd=120|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1330[fontsize=11,label="&larr;\n1330", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s154[fontsize=11,label="154", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s154 -> s1329 [fontname="Times-Italic", label="&epsilon;"];
+s1329:p0 -> s1320 [fontname="Times-Italic", label="&epsilon;"];
+s1329:p1 -> s1325 [fontname="Times-Italic", label="&epsilon;"];
+s1320 -> s1321 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'decltype'", arrowhead = normal];
+s1325 -> s1326 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'decltype'", arrowhead = normal];
+s1321 -> s1322 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'('", arrowhead = normal];
+s1326 -> s1327 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'('", arrowhead = normal];
+s1322 -> s1323 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<expression[0]>", arrowhead = normal];
+s1327 -> s1328 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'auto'", arrowhead = normal];
+s1323 -> s1324 [fontsize=11, fontname="Courier", arrowsize=.7, label = "')'", arrowhead = normal];
+s1328 -> s1330 [fontsize=11, fontname="Courier", arrowsize=.7, label = "')'", arrowhead = normal];
+s1324 -> s1330 [fontname="Times-Italic", label="&epsilon;"];
+s1330 -> s155 [fontname="Times-Italic", label="&epsilon;"];
+}

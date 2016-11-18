@@ -1,0 +1,34 @@
+digraph ATN {
+rankdir=LR;
+s359[fontsize=11, label="359", shape=doublecircle, fixedsize=true, width=.6];
+s2304[fontsize=11,label="2304", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2305[fontsize=11,label="2305", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2306[fontsize=11,label="{&rarr;\n2306\nd=298|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s2307[fontsize=11,label="&larr;\n2307", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s358[fontsize=11,label="358", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2295[fontsize=11,label="2295", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2296[fontsize=11,label="2296", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2297[fontsize=11,label="2297", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2298[fontsize=11,label="2298", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2299[fontsize=11,label="2299", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2300[fontsize=11,label="2300", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2301[fontsize=11,label="2301", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s2302[fontsize=11,label="{&rarr;\n2302\nd=297|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s2303[fontsize=11,label="&larr;\n2303", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s358 -> s2306 [fontname="Times-Italic", label="&epsilon;"];
+s2306:p0 -> s2295 [fontname="Times-Italic", label="&epsilon;"];
+s2306:p1 -> s2299 [fontname="Times-Italic", label="&epsilon;"];
+s2295 -> s2296 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'typename'", arrowhead = normal];
+s2299 -> s2300 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'typename'", arrowhead = normal];
+s2296 -> s2297 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<nestednamespecifier[0]>", arrowhead = normal];
+s2300 -> s2302 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<nestednamespecifier[0]>", arrowhead = normal];
+s2297 -> s2298 [fontsize=11, fontname="Courier", arrowsize=.7, label = "Identifier", arrowhead = normal];
+s2302:p0 -> s2301 [fontname="Times-Italic", label="&epsilon;"];
+s2302:p1 -> s2303 [fontname="Times-Italic", label="&epsilon;"];
+s2298 -> s2307 [fontname="Times-Italic", label="&epsilon;"];
+s2301 -> s2303 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'template'", arrowhead = normal];
+s2303 -> s2304 [fontname="Times-Italic", label="&epsilon;"];
+s2307 -> s359 [fontname="Times-Italic", label="&epsilon;"];
+s2304 -> s2305 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<simpletemplateid>", arrowhead = normal];
+s2305 -> s2307 [fontname="Times-Italic", label="&epsilon;"];
+}

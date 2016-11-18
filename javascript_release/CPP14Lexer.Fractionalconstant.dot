@@ -1,0 +1,28 @@
+digraph ATN {
+rankdir=LR;
+s302[fontsize=11, label="302", shape=doublecircle, fixedsize=true, width=.6];
+s1285[fontsize=11,label="1285", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1286[fontsize=11,label="{&rarr;\n1286\nd=45|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1287[fontsize=11,label="&larr;\n1287", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1288[fontsize=11,label="1288", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1289[fontsize=11,label="1289", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1290[fontsize=11,label="1290", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1291[fontsize=11,label="1291", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1292[fontsize=11,label="1292", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s301[fontsize=11,label="301", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s1293[fontsize=11,label="{&rarr;\n1293\nd=46|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s1294[fontsize=11,label="&larr;\n1294", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s301 -> s1293 [fontname="Times-Italic", label="&epsilon;"];
+s1293:p0 -> s1286 [fontname="Times-Italic", label="&epsilon;"];
+s1293:p1 -> s1290 [fontname="Times-Italic", label="&epsilon;"];
+s1286:p0 -> s1285 [fontname="Times-Italic", label="&epsilon;"];
+s1286:p1 -> s1287 [fontname="Times-Italic", label="&epsilon;"];
+s1290 -> s1291 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<Digitsequence>", arrowhead = normal];
+s1285 -> s1287 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<Digitsequence>", arrowhead = normal];
+s1287 -> s1288 [fontname="Times-Italic", label="&epsilon;"];
+s1291 -> s1292 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'.'", arrowhead = normal];
+s1288 -> s1289 [fontsize=11, fontname="Courier", arrowsize=.7, label = "'.'", arrowhead = normal];
+s1292 -> s1294 [fontname="Times-Italic", label="&epsilon;"];
+s1289 -> s1294 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<Digitsequence>", arrowhead = normal];
+s1294 -> s302 [fontname="Times-Italic", label="&epsilon;"];
+}

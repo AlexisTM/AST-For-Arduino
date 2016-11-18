@@ -1,0 +1,19 @@
+digraph ATN {
+rankdir=LR;
+s13[fontsize=11, label="13", shape=doublecircle, fixedsize=true, width=.6];
+s464[fontsize=11,label="{&rarr;\n464\nd=9|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+s465[fontsize=11,label="&larr;\n465", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s466[fontsize=11,label="466", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s467[fontsize=11,label="467", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s12[fontsize=11,label="12", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s462[fontsize=11,label="462", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s463[fontsize=11,label="463", shape=circle, fixedsize=true, width=.55, peripheries=1];
+s12 -> s462 [fontname="Times-Italic", label="&epsilon;"];
+s462 -> s464 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<lambdaintroducer>", arrowhead = normal];
+s464:p0 -> s463 [fontname="Times-Italic", label="&epsilon;"];
+s464:p1 -> s465 [fontname="Times-Italic", label="&epsilon;"];
+s463 -> s465 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<lambdadeclarator>", arrowhead = normal];
+s465 -> s466 [fontname="Times-Italic", label="&epsilon;"];
+s466 -> s467 [fontsize=11, fontname="Courier", arrowsize=.7, label = "<compoundstatement>", arrowhead = normal];
+s467 -> s13 [fontname="Times-Italic", label="&epsilon;"];
+}
